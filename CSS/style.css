@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+section{
+    padding: 120px 0;
+    min-height: 100vh;
+    z-index: 2;
+    position: relative;
+}
+
+/*  Owl Carousel  */
+.ow-l, .ow-r {
+    margin-top: 20px;
+    color: #0000002A;
+    font-size: 30px;
+    transition: all ease-in-out 0.5s;
+}
+.owl-prev , .owl-next{
+    background: transparent !important;
+}
+.ow-l:hover{
+    color:  var(--first-color);
+}
+.ow-r:hover{
+    color:  var(--first-color);
+}
+
+:root {
+    --first-color: #121212;
+    --second-color: #6b859d;
+    --third-color: #F05454;
+    --fourth-color: #F5F5F5;
+    --nav-color:#141e2a;
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--nav-color);
+}
+.navbar .navbar-brand {
+    color: var(--third-color);
+    font-size: 1.5em;
+}
+.navbar a {
+    font-family: Bebas Neue;
+    font-size: 1.5em;
+    color: var(--second-color);
+    transition: all 0.5s ease-in-out;
+}
+.navbar .nav-link:focus{
+    color: var(--fourth-color) !important;
+}
+.navbar a:hover{
+    color: var(--fourth-color);
+}
+.dropdown-menu {
+    background-color: var(--second-color);
+}
+.dropdown-menu.active {
+    color: var(--fourth-color) !important;
+}
+.dropdown-menu .dropdown-item {
+    color: var(--fourth-color);
+}
+.dropdown-menu .dropdown-item:hover {
+    background: var(--fourth-color);
+    color: var(--second-color);
+}
+.nav-link.active{
+    color: var(--fourth-color) !important;
+}
+.navbar-brand:hover {
+    color: var(--third-color) !important;
+}
+.navbar-toggler{
+    border: 2px solid var(--third-color);
+    color: var(--third-color) !important;
+    transition: all 0.5s ease-in-out;
+}
+.navbar-toggler:focus {
+    border: 2px solid var(--third-color) !important;
+    box-shadow: none;
+}
+.navbar-toggler:hover {
+    border: 2px solid var(--fourth-color);
+    color: var(--fourth-color) !important;
+}
+.navbar .btn {
+    color: var(--fourth-color) !important;
+    margin-top: 5px;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px 0px;
+    background-color: var(--third-color);
+    box-shadow: none !important;
+    border: none !important;
+    transition: all ease-in-out 0.3s;
+}
+.navbar .btn span {
+    font-family: Bebas Neue;
+    font-size: 0.9em;
+}
+.navbar .btn:hover {
+    transform: scale(0.9);
+}
+.modal {
+    font-family: Bebas Neue;
+    font-size: 1.5em;
+}
+
+/* Home */
+#home {
+    background-image: url(../images/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#home p {
+    font-family: Bebas Neue;
+    font-size: 1.5em;
+    background-color: transparent;
+    color: var(--fourth-color);
+}
+#home .btn-danger {
+    font-family: Bebas Neue;
+    font-size: 1.5em;
+    background-color: transparent;
+    color: var(--fourth-color);
+}
+#home .btn-danger:hover {
+    font-family: Bebas Neue;
+    font-size: 1.5em;
+    background-color: var(--third-color);
+}
+
+/* Funiture */
+#funitures h2{
+    font-family: Bebas Neue;
+    font-size: 2.5em;
+    text-align: center;
+}
+.card h3{
+    font-size: 1.5em;
+    font-family: Bebas Neue;
+    text-align: center;
+}
+.price {
+    background-color: var(--nav-color);
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    justify-content: space-around;
+    align-items: center;
+    line-height: 100%;
+    position: absolute;
+    bottom: 0;
+    transition: all ease-in-out 0.5s;
+    transform: translateY(200%);
+
+}
+.card:hover .price{
+    transform: translateY(0%);
+}
+.price .amount {
+    font-size: 1.5em;
+    font-family: Bebas Neue;
+    color: var(--fourth-color);
+}
+.price .btn {
+    transition: all ease-in-out 0.2s;
+    font-family: Bebas Neue;
+    color: var(--fourth-color);
+    background-color: var(--third-color);
+}
+.price .btn:hover {
+    transform: scale(.9);
+}
+
+/* Camping Equipment */
+#camping h2 {
+    font-family: Bebas Neue;
+    font-size: 2.5em;
+    text-align: center;
+}
+#camping .card {
+    font-family: Bebas Neue;
+}
+#camping .card .card-header {
+    font-size: 1.5em;
+    background-color: var(--third-color);
+    color: var(--fourth-color);
+    text-align: center;
+}
+#camping .card .card-footer {
+    background-color: var(--third-color);
+    color: var(--fourth-color);
+    text-align: center;
+}
+#camping .card .product-detil {
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    font-size: 1.5em;
+    justify-content: space-around;
+    align-items: center;
+    line-height: 100%;
+    bottom: 0;
+    transition: all ease-in-out 0.5s;
+}
+#camping a h3 {
+    margin-top: 2em;
+    font-size: 2em;
+    font-family: Bebas Neue;
+    text-align: center;
+}
+#camping a {
+    text-decoration: none;
+    color: var(--first-color);
+}
+#camping a h3 span {
+    color: var(--third-color);
+}
+
+/* Basket and Reviews */
+#basketnreview h2 {
+    font-family: Bebas Neue;
+    font-size: 2.5em;
+    text-align: center;
+}
+#basketnreview .card {
+    font-family: Bebas Neue;
+}
+#basketnreview .card .card-footer {
+    background-color: var(--third-color);
+    color: var(--fourth-color);
+    text-align: center;
+    font-size: 1.3em;
+}
+#basketnreview .title{
+    font-size: 1.5em;
+}
+#basketnreview .review{
+    font-size: 1.3em;
+}
+#basketnreview .rating {
+    color: var(--third-color);
+}
+#basketnreview .rating-point {
+    font-size: 1.5em;
+    color: var(--third-color);
+}
+#basketnreview .review-text .cmt {
+    font-size: 1.5em;
+    color: var(--third-color);
+}
+#basketnreview .buy-panal a {
+    text-decoration: none;
+    font-size: 1.3em;
+    color: var(--second-color);
+    transition: all ease-in-out 0.2s;
+}
+#basketnreview .buy-panal a:hover {
+    color: var(--first-color);
+}
+#basketnreview .buy-panal .btn {
+    background-color: var(--third-color);
+    color: var(--fourth-color);
+    transition: all ease-in-out 0.2s;
+}
+#basketnreview .buy-panal .btn:hover {
+    transform: scale(.9);
+}
+
+/* Activities and Address */
+#aanda h2 {
+    font-family: Bebas Neue;
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+/* Offers */
+#offers h2 {
+    font-family: Bebas Neue;
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 1em;
+}
+#offers .container-carousel input{
+   margin-left: 20px;
+}
+#offers main#carousel {
+    grid-row: 1 / 2;
+    grid-column: 1 / 8;
+    width: 90vw;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transform-style: preserve-3d;
+    perspective: 100px;
+    --items: 5;
+    --middle: 3;
+    --position: 1;
+    pointer-events: none;
+}
+#offers div.item {
+    position: absolute;
+    width: 300px;
+    height: 400px;
+    background-color: coral;
+    --r: calc(var(--position) - var(--offset));
+    --abs: max(calc(var(--r) * -1), var(--r));
+    transition: all 0.25s linear;
+    transform: rotateY(calc(-10deg * var(--r)))
+      translateX(calc(-300px * var(--r)));
+    z-index: calc((var(--position) - var(--abs)));
+}
+#offers div img {
+    border: 2px solid var(--third-color);
+    background-size: cover;
+}
+#offers div.item:nth-of-type(1) {
+    --offset: 1;
+}
+#offers div.item:nth-of-type(2) {
+    --offset: 2;
+    background-color: #ff70a6;
+}
+#offers div.item:nth-of-type(3) {
+    --offset: 3;
+    background-color: #ff9770;
+}
+#offers div.item:nth-of-type(4) {
+    --offset: 4;
+    background-color: #ffd670;
+}
+#offers div.item:nth-of-type(5) {
+    --offset: 5;
+    background-color: #e9ff70;
+}
+#offers input:nth-of-type(1) {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+#offers input:nth-of-type(1):checked ~ main#carousel {
+    --position: 1;
+}
+#offers input:nth-of-type(2) {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+}
+#offers input:nth-of-type(2):checked ~ main#carousel {
+    --position: 2;
+}
+#offers input:nth-of-type(3) {
+    grid-column: 4 /5;
+    grid-row: 2 / 3;
+}
+#offers input:nth-of-type(3):checked ~ main#carousel {
+    --position: 3;
+} 
+#offers input:nth-of-type(4) {
+    grid-column: 5 / 6;
+    grid-row: 2 / 3;
+}
+#offers input:nth-of-type(4):checked ~ main#carousel {
+    --position: 4;
+}
+#offersinput:nth-of-type(5) {
+    grid-column: 6 / 7;
+    grid-row: 2 / 3;
+}
+#offers input:nth-of-type(5):checked ~ main#carousel {
+    --position: 5;
+}
+
+.div-footer {
+    background-color: var(--nav-color);
+    padding: 2em;
+    color: var(--fourth-color);
+    font-family: Bebas Neue;
+}
+.div-footer .brand-logo {
+    color: var(--third-color);
+    font-size: 2em;
+}
+.div-footer .social i{
+    font-size: 2em;
+    margin-right: 20px;
+}
+.div-footer .social a {
+    text-decoration: none;
+    color: var(--second-color);
+    transition: all ease-in-out 0.2s;
+}
+.div-footer .social a:hover {
+    color: var(--fourth-color);
+}
+
+@media (max-width: 992px) {
+    section{
+        padding: 80px 0;
+    }
+    #basketnreview .col-md-8 {
+        margin-top: 2em;
+    }
+    .navbar .btn {
+        margin-right: 0 !important;
+    }
+    .modal {
+        font-family: Bebas Neue;
+        font-size: 1em;
+    }
+}
+  
